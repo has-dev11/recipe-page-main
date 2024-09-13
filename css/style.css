@@ -1,0 +1,126 @@
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    color: var(--stone-600);
+}
+body {
+    background-color: var(--stone-100);
+}
+.page {
+    width: 60%;
+    padding: 10px 3%;
+    margin: 100px auto;
+    background-color: var(--white);
+    border-radius: 20px;
+}
+.page * {
+    margin: 20px 0;
+}
+h2 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    color: var(--brown-800);
+}
+li {
+    padding-left: 15px;
+}
+li span {
+    font-weight: 600;
+}
+li::marker {
+    color: var(--brown-800);
+    font-weight: 600;
+}
+/* Page Title */
+.page .page-title img {
+    width: 100%;
+    border-radius: 20px;
+}
+.page .page-title h1 {
+    margin: 10px 0;
+    font-size: 36px;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    color: var(--stone-900);
+}
+.page .page-title p {
+    font-size: 14px;
+}
+
+/* Time */
+.page .time {
+    background-color: var(--rose-50);
+    padding: 10px 20px;
+}
+.page .time h3 {
+    color: var(--rose-800);
+    font-weight: 700;
+}
+.page .time ul {
+    padding: 0 20px;
+}
+
+/* Ingredients */
+.page .ingredients ul {
+    padding: 0 15px;
+}
+
+/* Instructions */
+.page .instructions ul {
+    padding: 0 15px;
+}
+.page .instructions ul li {
+    list-style-type: decimal;
+}
+
+/* Nutrition */
+.page .nutrition table {
+    width: 100%;
+    text-align: left;
+}
+.page .nutrition table tr * {
+    border-bottom: 1px solid var(--stone-150);
+    padding: 5px 0;
+}
+.page .nutrition table tr:last-child * {
+    border: none;
+}
+.page .nutrition table tr td {
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    color: var(--brown-800);
+}
+
+
+
+@media screen and (max-width: 770px) {
+    .page {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border-radius: 0;
+        padding: 0 30px;
+    }
+    .page .page-title {
+        padding: 0;
+    }
+    .page .page-title img {
+        width: 110%;
+        border-radius: 0;
+        margin: 0 -30px;
+    }
+}
